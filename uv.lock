@@ -3485,7 +3485,7 @@ requires-dist = [
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
     { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.5" },
     { name = "setuptools" },
-    { name = "sidpyhdf5", marker = "extra == 'plugins'", git = "https://github.com/ramav87/sidpyHDF5.git" },
+    { name = "sidpyhdf5", marker = "extra == 'plugins'", git = "https://github.com/ramav87/sidpyHDF5.git?rev=f4412cb03b655b284e4e1819e354e14c83b4bb76" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
 
@@ -5923,7 +5923,7 @@ wheels = [
 [[package]]
 name = "sidpyhdf5"
 version = "0.1.0"
-source = { git = "https://github.com/ramav87/sidpyHDF5.git#0f5761a9f397782a008a20815104f2062f87897c" }
+source = { git = "https://github.com/ramav87/sidpyHDF5.git?rev=f4412cb03b655b284e4e1819e354e14c83b4bb76#f4412cb03b655b284e4e1819e354e14c83b4bb76" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
