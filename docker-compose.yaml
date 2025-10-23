@@ -1,5 +1,8 @@
 services:
-  upload_limit: 10000
+  upload_limit:
+    per_user_unpublished: 1000
+    max_total_upload_size: 10000000000  # (optional)
+    per_upload_file_count: 1000
   # broker for celery
   rabbitmq:
     restart: unless-stopped
