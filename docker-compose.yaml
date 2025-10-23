@@ -1,4 +1,5 @@
 services:
+  upload_limit: 10000
   # broker for celery
   rabbitmq:
     restart: unless-stopped
@@ -115,7 +116,8 @@ services:
         condition: service_started
     volumes:
       # - ./configs/nomad.yaml:/app/nomad.yaml
-      - ./.volumes/fs:/app/.volumes/fs
+      #- ./.volumes/fs:/app/.volumes/fs
+      - /mnt/CNMS_Nomad:/app/.volumes/fs
     command: ./run.sh
     healthcheck:
       test:
