@@ -86,7 +86,8 @@ services:
         condition: service_healthy
     volumes:
       # - ./configs/nomad.yaml:/app/nomad.yaml
-      - ./.volumes/fs:/app/.volumes/fs
+      #- ./.volumes/fs:/app/.volumes/fs
+      - /mnt/CNMS_Nomad:/app/.volumes/fs
     command: python -m celery -A nomad.processing worker -l info -Q celery --max-tasks-per-child 128
 
   # nomad app (api + proxy)
