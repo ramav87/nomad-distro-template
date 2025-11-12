@@ -1,1 +1,63 @@
-
+definitions:
+  sections:
+    BiofilmCulture:
+      base_sections:
+        - nomad.datamodel.metainfo.eln.MaterialProcessing
+      quantities:
+        preparer_name:
+          type: str
+          description: "Name of person who prepared the culture"
+        date_prepared:
+          type: Datetime
+        sample_id:
+          type: str
+        species:
+          type: str
+          description: "Bacterial species (e.g., Pantoea sp. YR343)"
+        medium:
+          type: str
+        temperature_C:
+          type: float
+          unit: °C
+        culture_details:
+          type: str
+        biofilm_formed:
+          type: bool
+        od600:
+          type: float
+          description: "Optical density at 600 nm"
+        substrate:
+          type: str
+        replicates:
+          type: str
+        volume_cells_added_ml:
+          type: float
+          unit: ml
+        incubation_temp_C:
+          type: float
+          unit: °C
+        medium_replaced:
+          type: str
+        incubation_time:
+          type: str
+        washing:
+          type: str
+        fixed:
+          type: bool
+        stains:
+          type: str
+        timecourse:
+          type: bool
+        eln_link:
+          type: str
+        imaging_sessions:
+          type: list
+          description: "Details for each imaging session (AFM, TEM, etc.)"
+          items:
+            type: JSON
+            description: "Each entry stores imaging metadata"
+        dropbox_links:
+          type: list
+          description: "Dropbox or external data folder links"
+          items:
+            type: str
