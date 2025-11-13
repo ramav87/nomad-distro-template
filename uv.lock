@@ -3210,7 +3210,6 @@ plugins = [
     { name = "pynxtools-spm" },
     { name = "pynxtools-xps" },
     { name = "pynxtools-xrd" },
-    { name = "sirisha" },
 ]
 
 [package.metadata]
@@ -3245,7 +3244,6 @@ requires-dist = [
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
     { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.5" },
     { name = "setuptools" },
-    { name = "sirisha", marker = "extra == 'plugins'", git = "https://github.com/Sireesiru/BraveSample.git" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
 
@@ -5625,14 +5623,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ed/98/89e7acc27448262afbc87b65da8eede428466f5e5307da42a5a1b5c9cafe/silx-2.2.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:da5477c7c55aee77540b6b322941bfe716fd3504fcce67c079a4d446359cb4de", size = 14095777, upload-time = "2025-01-21T16:37:53.102Z" },
     { url = "https://files.pythonhosted.org/packages/39/91/903dbd89b769220dbc5ca149b54606a94c6b858a25193df6d9c5d5695c2e/silx-2.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e001cb01fc4e556643179fb860f0628adb2b75f2e28a59f68eb4cebd4fe7ab1c", size = 13820847, upload-time = "2025-01-21T16:37:56.241Z" },
     { url = "https://files.pythonhosted.org/packages/f6/f7/40abface589a037ef97fcb698f772f153a330325745adcbe50917a245d76/silx-2.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:62fa2644059bc0b0923e9a7a3c0e1bca638a758c1c31fda18d01ed748bc7f4cd", size = 4277360, upload-time = "2025-01-21T16:37:59.353Z" },
-]
-
-[[package]]
-name = "sirisha"
-version = "0.1.0"
-source = { git = "https://github.com/Sireesiru/BraveSample.git#bb274cf601f44701ff2998ebca39557ffffd9f16" }
-dependencies = [
-    { name = "nomad-lab" },
 ]
 
 [[package]]
